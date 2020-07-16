@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //       Crie um outro arquivo com o nome final.html, 
+    // e crie o seguinte código: 8.1Crie um sistema que possa receber 5 números, ok
+    // 8.2Esse sistema deve retornar para o usuário o menor e o maior número.ok
+    //  8.3Ele também deve informar quais são os números pares e ímpares. 
+    //  8.3Ele deve retornar também se tem algum numero repetido, se sim, 
+    //  qual é esse número e quantas vezes está repetido.
+    //  9°Faça um commit e push de tudo para seu repositório no git. 
+
+    var n1 = (parseInt(prompt('digite um numero')));
+    var n2 = (parseInt(prompt('digite outro numero')));
+    var n3 = (parseInt(prompt('digite outro numero')));
+    var n4 = (parseInt(prompt('digite outro numero')));
+    var n5 = (parseInt(prompt('digite outro numero')));
+
+    function menorEMaiorNumero(n1,n2,n3,n4,n5){
+        var maior = Math.max(n1,n2,n3,n4,n5);
+        var menor = Math.min(n1,n2,n3,n4,n5);
+             document.write(`Dos valores ${n1},${n2},${n3},${n4},${n5} <br>`);
+             document.write(`O maior numero é ${maior} e o menor numero é ${menor}<br>`);
+             if (n1 % 2 != 0) {
+                 document.write(n1+"impar <br>") 
+             }else{
+                 document.write(n1+"par <br>") 
+             }if (n2 % 2 != 0) {
+                document.write(n2+"impar <br>") 
+             }else{
+                document.write(n2+"par <br>") 
+             }if (n3 % 2 != 0) {
+                document.write(n3+"impar <br>") 
+             }else{
+                document.write(n3+"par <br>") 
+             }if (n4 % 2 != 0) {
+                 rdocument.write(n4+"impar <br>") 
+             }else{
+                document.write(n4+"par <br>") 
+             }if (n5 % 2 != 0) {
+                document.write(n5+"impar <br>") 
+             }else{
+                document.write(n5+"par <br>") 
+             }     
+                     
+    } 
+    
+    menorEMaiorNumero(n1,n2,n3,n4,n5);
+
+    </script>
+    
+</body>
+</html>
